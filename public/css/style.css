@@ -1,0 +1,14 @@
+body {
+    background-color: aqua;
+}
+
+p {
+    min-height: 100vh;
+    display: flex;
+    font-size: 12px;
+    color: blue;
+}
+
+#heading1 {
+    background-color: black;
+}

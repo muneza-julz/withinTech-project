@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+    <title>DOM Manipulation in javascript</title>
+  </head>
+  <body>
+    <input type="text" id="inputText" placeholder="Enter a new task..." />
+    <button id="submit">Add a Task</button>
+    <ol id="task-list"></ol>
+    <script>
+      const input = document.getElementById("inputText");
+      const button = document.getElementById("submit");
+      const list = document.getElementById("task-list");
+
+      button.addEventListener("click", function () {
+        const task = input.value;
+        if (task == "") {
+          alert();
+          return;
+        }
+
+        const li = document.createElement("li");
+        li.textContent = task;
+        list.appendChild(li);
+
+        input.value = "";
+      });
+    </script>
+  </body>
+</html>

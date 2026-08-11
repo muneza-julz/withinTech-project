@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login portal</title>
+    <style>
+      html {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+      
+      }
+      body {
+        align-items: center;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        font-size: 100%;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .form-input, .btn{
+        width: 100%;
+        border: 5px solid #ced4da;
+
+      }
+      .form-input:focus{
+        background-color: #0d6efd;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" class="form-group">
+      <h1>Please sign in</h1>
+      <input type="email" class="form-input" placeholder="Email address" active/>
+      <input type="password" class="form-input" placeholder="Password" />
+      <input type="checkbox" class="checkbox" name="remember-me" />
+      <label for="remember-me">remember-me</label
+      ><button class="btn">Sign in</button>
+      <p class="quote">Copyright &copy; 2020</p>
+    </form>
+  </body>
+</html>
