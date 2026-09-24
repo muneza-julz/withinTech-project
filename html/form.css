@@ -1,0 +1,9 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-height: 62h;
+    justify-content: center;
+    margin: 120px 120px;
+    
+
+}
